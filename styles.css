@@ -340,3 +340,86 @@ main {
 .contact-form-section button:hover {
     background-color: var(--naranja-oscuro);
 }
+
+
+
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    /* Encabezado */
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .logo img {
+        height: 60px; /* Ajusta el tamaño del logo para pantallas pequeñas */
+    }
+
+    /* Menú de navegación */
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .submenu {
+        position: static;
+        display: none; /* Oculta los submenús por defecto */
+    }
+
+    .menu-item:hover .submenu {
+        display: block; /* Muestra el submenú al hacer clic */
+    }
+
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-gallery img {
+        width: 100%; /* Imágenes de la galería ocupan el ancho completo del contenedor */
+        max-width: 100%;
+    }
+
+    .welcome-section img {
+        width: 80%; /* Ajusta el tamaño de la imagen de bienvenida */
+    }
+
+    .services-section, .blog-section, .about-section, .contact-form-section {
+        padding: 10px;
+    }
+
+    .contact-form-section {
+        max-width: 100%;
+    }
+}
+
+/* Media Query para pantallas muy pequeñas (teléfonos móviles) */
+@media (max-width: 480px) {
+    /* Ajusta los tamaños de fuente y espaciado */
+    .welcome-section h1 {
+        font-size: 1.5em;
+    }
+
+    .services-section h3, .blog-section h3, .about-section h2 {
+        font-size: 1.2em;
+    }
+
+    .welcome-section p, .services-section p, .blog-section p, .about-section p {
+        font-size: 1em;
+    }
+    
+    .contact-form-section input,
+    .contact-form-section textarea {
+        font-size: 0.9em;
+    }
+}
