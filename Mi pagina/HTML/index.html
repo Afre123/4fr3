@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pagina Web</title>
+    <link rel="stylesheet" href="../CSS/styles.css"> <!-- Enlace a la hoja de estilos CSS -->
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <!-- Sección del logo -->
+        <div class="logo">
+            <img src="../src/logo_fox.png" alt="Logo"> <!-- Imagen del logo -->
+        </div>
+        <!-- Menú de navegación -->
+        <nav class="nav-menu">
+            <ul class="menu">
+                <!-- Elementos del menú principal con submenús desplegables -->
+                <li class="menu-item dropdown">
+                    <a href="#">Inicio</a>
+                </li>
+                <li class="menu-item dropdown">
+                    <a href="#">Música</a>
+                    <ul class="submenu">
+                        <!-- Items del submenú -->
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                        <li><a href="#">Item 4</a></li>
+                        <li><a href="#">Item 5</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item dropdown">
+                    <a href="#">Desarrollo Web</a>
+                    <ul class="submenu">
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item dropdown">
+                    <a href="#">Desarrollo Móvil</a>
+                    <ul class="submenu">
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item dropdown">
+                    <a href="#">Tienda</a>
+                    <ul class="submenu">
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item dropdown">
+                    <a href="#">Contactos</a>
+                    <ul class="submenu">
+                        <li><a href="mailto:alfredofernandez001@gmail.com">Correo</a></li>
+                        <li><a href="https://www.linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/tu-usuario" target="_blank">GitHub</a></li>
+                        <li><a href="https://wa.me/3364356618" target="_blank">WhatsApp</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <!-- Galería de imágenes -->
+    <div class="image-gallery">
+        <img src="../src/PORTADA ALBUM.png" alt="Imagen 1">
+        <img src="../src/PORTADA ALBUM.png" alt="Imagen 2">
+        <img src="../src/PORTADA ALBUM.png" alt="Imagen 3">
+        <img src="../src/PORTADA ALBUM.png" alt="Imagen 4">
+    </div>
+
+    <!-- Sección principal de bienvenida -->
+    <main>
+        <section class="welcome-section">
+            <h1>Bienvenido</h1>
+            <img src="../src/logo_fox.png" alt="Imagen de bienvenida">
+            <p>Bienvenido a nuestra página web. Aquí encontrarás información sobre música, desarrollo web, desarrollo móvil, y mucho más. Navega por nuestro menú para descubrir todas las secciones disponibles.</p>
+        </section>
+    </main>
+
+
+
+    <!-- seccion de servicios a ofrecer -->
+    <section class="services-section">
+        <h2>Servicios</h2>
+        <div class="service">
+            <h3>Desarrollo Web</h3>
+            <p>Desarrollo de sitios web personalizados y optimizados para todos los dispositivos.</p>
+        </div>
+        <div class="service">
+            <h3>Desarrollo Móvil</h3>
+            <p>Creación de aplicaciones móviles para iOS y Android con una experiencia de usuario excepcional.</p>
+        </div>
+        <div class="service">
+            <h3>Consultoría</h3>
+            <p>Asesoría en proyectos tecnológicos, estrategias digitales y soluciones innovadoras.</p>
+        </div>
+    </section>
+    
+
+    <!-- seccion de blog -->
+    <section class="blog-section">
+        <h2>Blog</h2>
+        <article class="blog-post">
+            <h3>Título del Artículo</h3>
+            <p>Resumen del artículo. Un pequeño párrafo con la introducción del contenido.</p>
+            <a href="enlace-al-articulo" target="_blank">Leer más</a>
+        </article>
+        <!-- Agrega más artículos según sea necesario -->
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Sección sobre mí -->
+    <section class="about-section">
+        <h2>Sobre Mí</h2>
+        <p>Hola, soy Alfredo Fernández. Soy un programador, músico y emprendedor apasionado por lo que hago. Cada proyecto que emprendo lo tomo con seriedad y dedicación, buscando siempre aprender y mejorar con cada experiencia. Mi meta es entregar resultados excepcionales y seguir creciendo profesionalmente. Espero que disfrutes navegando por mi página y, si estás interesado en colaborar en algún proyecto, no dudes en contactarme. ¡Estoy siempre abierto a nuevas oportunidades y desafíos!</p>
+        <a href="mailto:alfredofernandez001@gmail.com" class="contact-button">Contáctame</a>
+    </section>
+
+
+    <section class="contact-form-section">
+        <h2>Contacto</h2>
+        <form action="enviar-correo.php" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    
+</body>
+</html>
