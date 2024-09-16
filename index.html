@@ -1,160 +1,99 @@
 <!DOCTYPE html>
-<html lang="es">
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Pagina Web</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos CSS -->
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/indexStyle.css">
+    <link rel="shortcut icon" href="/src/icono.png" />
+    <title>Inicio</title>
 </head>
+
 <body>
-    <!-- Encabezado de la página -->
+
+    <!-- header -->
     <header>
-        <!-- Sección del logo -->
-        <div class="logo">
-            <img src="Mi pagina/src/logo_fox.png" alt="Logo"> <!-- Imagen del logo -->
-        </div>
-        <!-- Menú de navegación -->
-        <nav class="nav-menu">
-            <ul class="menu">
-                <!-- Elementos del menú principal con submenús desplegables -->
-                <li class="menu-item dropdown">
-                    <a href="#">Inicio</a>
-                </li>
-                <li class="menu-item dropdown">
-                    <a href="#">Música</a>
-                    <ul class="submenu">
-                        <!-- Items del submenú -->
-                        <li><a href="#">Item 1</a></li>
-                        <li><a href="#">Item 2</a></li>
-                        <li><a href="#">Item 3</a></li>
-                        <li><a href="#">Item 4tp</a></li>
-                        <li><a href="#">Item 5</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item dropdown">
-                    <a href="#">Desarrollo Web</a>
-                    <ul class="submenu">
-                        <li><a href="#">Item 1</a></li>
-                        <li><a href="#">Item 2</a></li>
-                        <li><a href="#">Item 3</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item dropdown">
-                    <a href="#">Desarrollo Móvil</a>
-                    <ul class="submenu">
-                        <li><a href="#">Item 1</a></li>
-                        <li><a href="#">Item 2</a></li>
-                        <li><a href="#">Item 3</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item dropdown">
-                    <a href="#">Tienda</a>
-                    <ul class="submenu">
-                        <li><a href="#">Item 1</a></li>
-                        <li><a href="#">Item 2</a></li>
-                        <li><a href="#">Item 3</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item dropdown">
-                    <a href="#">Contactos</a>
-                    <ul class="submenu">
-                        <li><a href="mailto:alfredofernandez001@gmail.com">Correo</a></li>
-                        <li><a href="https://www.linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a></li>
-                        <li><a href="https://github.com/tu-usuario" target="_blank">GitHub</a></li>
-                        <li><a href="https://wa.me/3364356618" target="_blank">WhatsApp</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+    <nav class="header-nav">
+    
+    <ul class="sidebar">
+        <li onclick=HideSidebar() class="nav-ul-li li-img"><img src="src/close.svg"></li>
+        <li class="nav-ul-li li-img"><img src="src/icono.png"></li>
+        
+        
+        <li class="nav-ul-li"><a class="nav-a" href="#">Inicio</a></li>
+        <li class="nav-ul-li"><a class="nav-a" href="#">Reflexiones</a></li>
+        <li class="nav-ul-li"><a class="nav-a" href="#">Imagenes</a></li>
+        <li class="nav-ul-li"><a class="nav-a" href="#">Desarrollo de apps</a></li>
+        <li class="nav-ul-li"><a class="nav-a" href="#">Musica</a></li>
+    </ul>
+    
+    <ul class="nav-ul">
+        <li class="nav-ul-li li-img"><img src="src/icono.png"></li>
+        
+        <li class="nav-ul-li hideOnMobile"><a class="nav-a" href="#">Inicio</a></li>
+        <li class="nav-ul-li hideOnMobile"><a class="nav-a" href="#">Reflexiones</a></li>
+        <li class="nav-ul-li hideOnMobile"><a class="nav-a" href="#">Imagenes</a></li>
+        <li class="nav-ul-li hideOnMobile"><a class="nav-a" href="#">Desarrollo de apps</a></li>
+        <li class="nav-ul-li hideOnMobile"><a class="nav-a" href="#">Musica</a></li>
+        <li onclick=ShowSidebar() class="nav-ul-li li-img"><img src="src/menu.svg"></li>
+    </ul>
+    </div>
+    </nav>
     </header>
 
-
-
-
-    <!-- Galería de imágenes -->
-    <div class="image-gallery">
-        <img src="Mi pagina/src/PORTADA ALBUM.png" alt="Imagen 1">
-        <img src="Mi pagina/src/PORTADA ALBUM.png" alt="Imagen 2">
-        <img src="Mi pagina/src/PORTADA ALBUM.png" alt="Imagen 3">
-        <img src="Mi pagina/src/PORTADA ALBUM.png" alt="Imagen 4">
-    </div>
-
-    <!-- Sección principal de bienvenida -->
-    <main>
-        <section class="welcome-section">
-            <h1>Bienvenido</h1>
-            <img src="Mi pagina/src/logo_fox.png" alt="Imagen de bienvenida">
-            <p>Bienvenido a nuestra página web. Aquí encontrarás información sobre música, desarrollo web, desarrollo móvil, y mucho más. Navega por nuestro menú para descubrir todas las secciones disponibles.</p>
-        </section>
-    </main>
-
-
-
-    <!-- seccion de servicios a ofrecer -->
-    <section class="services-section">
-        <h2>Servicios</h2>
-        <div class="service">
-            <h3>Desarrollo Web</h3>
-            <p>Desarrollo de sitios web personalizados y optimizados para todos los dispositivos.</p>
-        </div>
-        <div class="service">
-            <h3>Desarrollo Móvil</h3>
-            <p>Creación de aplicaciones móviles para iOS y Android con una experiencia de usuario excepcional.</p>
-        </div>
-        <div class="service">
-            <h3>Consultoría</h3>
-            <p>Asesoría en proyectos tecnológicos, estrategias digitales y soluciones innovadoras.</p>
-        </div>
-    </section>
+<script>
+    function ShowSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+    }
+    function HideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+    }
+</script>
+<div class="container">
+<article>
+    <h2>¿Qué es esta pagina?</h2>
+    <p class="wa" >Esta página tiene como fin, dejar un seguimiento de toda mi creatividad
+                    y proyectos hechos y por hacer.
+                    Algunas de las cosas que te podés encontrar son:
+    </p>
     
-
-    <!-- seccion de blog -->
-    <section class="blog-section">
-        <h2>Blog</h2>
-        <article class="blog-post">
-            <h3>Título del Artículo</h3>
-            <p>Resumen del artículo. Un pequeño párrafo con la introducción del contenido.</p>
-            <a href="enlace-al-articulo" target="_blank">Leer más</a>
-        </article>
-        <!-- Agrega más artículos según sea necesario -->
-    </section>
+    <ul>
     
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Sección sobre mí -->
-    <section class="about-section">
-        <h2>Sobre Mí</h2>
-        <p>Hola, soy Alfredo Fernández. Soy un programador, músico y emprendedor apasionado por lo que hago. Cada proyecto que emprendo lo tomo con seriedad y dedicación, buscando siempre aprender y mejorar con cada experiencia. Mi meta es entregar resultados excepcionales y seguir creciendo profesionalmente. Espero que disfrutes navegando por mi página y, si estás interesado en colaborar en algún proyecto, no dudes en contactarme. ¡Estoy siempre abierto a nuevas oportunidades y desafíos!</p>
-        <a href="mailto:alfredofernandez001@gmail.com" class="contact-button">Contáctame</a>
-    </section>
-
-
-    <section class="contact-form-section">
-        <h2>Contacto</h2>
-        <form action="enviar-correo.php" method="post">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
+    <li><p class="art_head_li">» Letras</p>
+        <ul>
+            <li class="sli2">◇ Reflexiones</li>
+            <li class="sli2">◇ Letras de canciones</li>
+            <li class="sli2">◇ Críticas</li>
+            <li class="sli2">◇ Mis anhelos</li>
+        </ul>
+        </li>
     
+    <li><p class="art_head_li">» Imágenes</p>
+        <ul>
+            <li class="sli2">◇ Dibujos</li>
+            <li class="sli2">◇ Animaciones</li>
+            <li class="sli2">◇ videos</li>
+        </ul>
+        </li>
+    
+    <li><p class="art_head_li">» Desarrollo de apps</p>
+        <ul>
+            <li class="sli2">◇ Aplicaciones útiles</li>
+            <li class="sli2">◇ Juegos entretenidos</li>
+            <li class="sli2">◇ Experimentos con app</li>
+        </ul>
+    </li>
+    
+    <li> <p class="art_head_li">» Música</p>
+        <ul>
+            <li class="sli2">◇ Canciones propias</li>
+            <li class="sli2">◇ Canciones hechas con amigos</li>
+            <li class="sli2">◇ Canciones premiun</li>
+        </ul>
+        </li>
+    </ul>
+    </article>
+</div>
 </body>
 </html>
