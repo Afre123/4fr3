@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/imagenesStyle.css">
+    <link rel="shortcut icon" href="../../src/icono.png" />
+    <title>Imagenes</title>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+    <nav class="header-nav">
+    
+    <ul class="sidebar">
+        <li onclick=HideSidebar() class="img_svg"><img src="../../src/close.svg"></li>
+        <li class=""><img src="../../src/icono.png"></li>
+        
+        
+        <li class=""><a class="nav-a" href="../../index.html">Inicio</a></li>
+        <li class=""><a class="nav-a" href="../../page/reflexiones_articulos.html">Reflexiones</a></li>
+        <li class=""><a class="nav-a" href="../../page/gallery/imagenes.html">Imagenes</a></li>
+        <li class=""><a class="nav-a" href="#">Desarrollo de apps</a></li>
+        <li class=""><a class="nav-a" href="#">Musica</a></li>
+    </ul>
+    
+    <ul class="nav-ul">
+        <li class="nav-ul-li li-img"><img src="../../src/icono.png"></li>
+        
+        <li class="hideOnMobile"><a class="" href="../../index.html">Inicio</a></li>
+        <li class="hideOnMobile"><a class="" href="../../page/reflexiones_articulos.html">Reflexiones</a></li>
+        <li class="hideOnMobile"><a class="" href="#">Imagenes</a></li>
+        <li class="hideOnMobile"><a class="" href="#">Desarrollo de apps</a></li>
+        <li class="hideOnMobile"><a class="" href="#">Musica</a></li>
+        <li onclick=ShowSidebar() class="img_svg"><img src="../../src/menu.svg"></li>
+    </ul>
+    </div>
+    </nav>
+    </header>
+    <script>
+        function ShowSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+        }
+        function HideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+        }
+    </script>
+    <br><br><br><br><br>
+    <div class="container">
+
+        <h2 class="titulo_container">Galeria de Imagenes</h2>
+
+        <div class="galeria_img">
+            <!-- primera columna -->
+            <div class="columna">   <!-- div para la primera columna de imgs -->
+                <div class="imagenes">  <!-- div para el primer item -->
+                    <img src="../../src/bgRef.jpg" alt=""> <!-- img a mostrar -->
+                </div>
+                <div class="imagenes"> <!-- div para el segundo item -->
+                    <img src="../../src/bg.jpg" alt="">
+                </div>
+                <div class="imagenes"> <!-- div para el tercer item -->
+                    <img src="../../src/ninoroto.jpg" alt="">
+                </div>
+                <div class="imagenes">
+                    <img width="50%" src="../../src/bgesctorio.jpg" alt="">
+                </div>
+            </div>
+                <!-- segunda columna -->
+                <div class="columna">
+                    <div class="imagenes">
+                        <img src="../../src/img0.jpg" alt="">
+                    </div>
+                    <div class="imagenes">
+                        <img src="../../src/img2.jpg" alt="">
+                    </div>
+                    <div class="imagenes">
+                        <img src="../../src/img1.jpg" alt="">
+                    </div>
+                    <div class="imagenes">
+                        <img src="../../src/1c30d47abf24013f0830e25a3f118fde.jpg" alt="">
+                    </div>
+                    <div class="imagenes">
+                        <img width="50%" src="../../src/bgesctorio.jpg" alt="">
+                    </div>
+                </div>
+                    <!-- tercera columna -->
+                    <div class="columna">
+                        <div class="imagenes">
+                            <img src="../../src/bgRef.jpg" alt="">
+                        </div>
+                        <div class="imagenes">
+                            <img src="../../src/bg.jpg" alt="">
+                        </div>
+                        <div class="imagenes">
+                            <img src="../../src/ninoroto.jpg" alt="">
+                        </div>
+                        <div class="imagenes">
+                            <img width="50%" src="../../src/bgesctorio.jpg" alt="">
+                        </div>
+                    </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+
+
+    </body>
+    </html>

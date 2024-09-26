@@ -134,6 +134,7 @@ article p {
     margin-left: 20px;  /* posicion a la izquierda de la imagen */
     border-radius: 2px;
     width: 30%;
+    object-fit: cover;
 }
 .contenido{
     display: flex;          /* hacer flexible la caja y su contenido */

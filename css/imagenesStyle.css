@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial, tahoma,sans-serif;
+    overflow: hidden;
+    min-width: 10%;
+}
+
+body, html{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-y: scroll;
+}
+
+
+header{
+    display: flexbox;
+    box-shadow: 0 0 7px black;
+    position: fixed;
+    top:0;
+    width:100%;
+    height: 3.6em;
+    z-index: 1000;
+}
+nav {
+    background: linear-gradient(to left top, #1c8562, #2a803b);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: larger;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 3em;
+}
+
+nav a, nav img{
+    text-decoration: none;
+    color: #fff;
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 2px;
+}
+
+nav a:hover,.img_svg:hover {
+    background: #f0f0f0;
+    color: #333;
+}
+
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top:0;
+    right:0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background: #fff0.2;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    animation: 2;
+}
+li img{
+    box-sizing: content-box;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+.sidebar li{
+    width:100%;
+}
+
+.sidebar a{
+    width:100%;
+    color: #333;
+}
+
+/*media query general*/
+
+@media screen and (max-width:800px) {
+    .hideOnMobile{
+        display: none;
+        
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
+}
+/* media query galeria */
+@media(max-width:768px){
+    .galeria_img{
+        flex-direction: column;
+    }
+}
+
+/* css de la pagina */
+
+.container{         /* arreglos basicos para el container */
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.galeria_img{
+display: flex; /* cajas flexibles */
+gap: 20px;
+}
+
+.columna{
+    display: flex; /* caja flexible */
+    flex-direction: column; /* ordenar flexibilidad como columna */
+    gap:20px; /* espaciado 20 gap */
+}
+
+.imagenes img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+/* jugar no importa */
+
