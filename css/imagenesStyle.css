@@ -111,12 +111,7 @@ li img{
     }
 }
 /* media query galeria */
-@media(max-width:768px){
-    .galeria_img{
-        flex-direction: column;
-    }
-}
-
+/* habia algo pero no me gusto */
 /* css de la pagina */
 
 .container{         /* arreglos basicos para el container */
