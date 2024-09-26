@@ -166,9 +166,21 @@ article p {
     .hideOnMobile{
         display: none;
     }
-    .articulo:first-child{
-        display: inline-block;
-        width: 100px;
+    .articulo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .articulo img{
+        width: 60%;
+        display: flex;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .contenido{
+        display: flex;
+        
     }
 }
 
