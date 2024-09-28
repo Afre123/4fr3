@@ -321,12 +321,21 @@ tbody tr td:nth-child(2){/* separacion de la seguna fila */
     article .div-table{
         overflow: auto;   
     }
+    article h3{text-align: center;}
     article .decoracion-titulo{
-        font-size: 1em;
-        margin: auto;
-        margin-left: 5px;
-        max-width: min-content;
+    margin: auto;
+    padding: auto;
+    font-size: medium;
     }
+    .container-titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-input input{width: 50%;}
+    .container-input textarea {width: 80%;}
+    .container-input button{width: 50%;}
+
 }
 
 @media(max-width: 400px) {
