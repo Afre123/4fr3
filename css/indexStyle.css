@@ -97,20 +97,7 @@ li img{
     color: #333;
 }
 
-/*media query*/
 
-@media screen and (max-width:800px) {
-    .hideOnMobile{
-        display: none;
-        
-    }
-}
-
-@media(max-width: 400px) {
-    .sidebar{
-        width: 100%;
-    }
-}
 
 /* articulos */
 
@@ -276,4 +263,74 @@ tbody tr td:nth-child(2){/* separacion de la seguna fila */
 }
 .font-italica{
     font-style: italic;
+}
+/* Style de los comentario */
+.container-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-input input{
+    text-transform: capitalize;
+    padding: 4px;
+    font-size: 1em;
+    width: 20%;
+    height: 2em;
+    border-radius: 5px;
+    border-style: none;
+    border: 2px #2f3f2f solid;
+}
+.container-input textarea{
+    text-transform: capitalize;
+    padding: 4px;
+    font-size: 1em;
+    width: 40%;
+    height: 4em;
+    border-radius: 5px;
+    border-style: none;
+    border: 2px #2f3f2f solid;
+    scroll-behavior: auto;
+    max-width: 500px;
+    max-height: 4.5em;
+    overflow-y: auto;
+}
+.container-input button{
+    margin: 5px ;
+    width: 5em;
+    height: 3em;
+    border-radius: 7px;
+
+    border-style: none;
+    border: 2px #2f3f2f solid;
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #052118;
+    background-color: #38d157;
+}
+
+
+/*media query*/
+
+@media screen and (max-width:800px) {
+    .hideOnMobile{
+        display: none;
+        
+    }
+
+    article .div-table{
+        overflow: auto;   
+    }
+    article .decoracion-titulo{
+        font-size: 1em;
+        margin: auto;
+        margin-left: 5px;
+        max-width: min-content;
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
 }
