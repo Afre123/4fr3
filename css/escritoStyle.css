@@ -7,7 +7,7 @@
 }
 
 body, html{
-    box-sizing: content-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -109,4 +109,51 @@ li img{
     .sidebar{
         width: 100%;
     }
+}
+
+
+article{
+    margin: 0 1em;
+    margin-top: 5em;
+    color:white;
+    
+    background: #0007;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px 1px #000;
+}
+h1{
+    text-align: center;
+    padding: 5px;
+    text-decoration: underline;
+    font-size: 3em;
+    
+}
+p{text-align: justify;font-weight: 500;
+    padding: 20px;
+    font-size: 1.7em;
+    text-align: center;
+
+}
+
+.bg{    display: block;
+    background-image: url("../src/ninoroto.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    z-index: -1000;
+}
+
+.fecha_publicacion{
+margin: 1.5em;
+}
+.fecha_publicacion p{
+text-align: right;
+font-style: italic;
+font-weight: 100;
+font-size: 1.2em;
+
+}
+.fecha_publicacion p:first-child{
+margin: 1px;
+padding: 0 20px;
+font-size: 1.3em;
 }
