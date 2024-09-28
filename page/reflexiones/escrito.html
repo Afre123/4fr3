@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/escritoStyle.css">
+    <link rel="shortcut icon" href="/src/icono.png">
+    <title>Vivir o Morir</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="header-nav">
+            <ul class="sidebar">
+                <li onclick="HideSidebar()" class="img_svg"><img src="/src/close.svg" alt="Close Menu"></li>
+                <li class=""><img src="/src/icono.png" alt="Logo"></li>
+                <li><a class="nav-a" href="index.html">Inicio</a></li>
+                <li><a class="nav-a" href="reflexiones_articulos.html">Reflexiones</a></li>
+                <li><a class="nav-a" href="imagenes.html">Imágenes</a></li>
+                <li><a class="nav-a" href="#">Desarrollo de apps</a></li>
+                <li><a class="nav-a" href="#">Música</a></li>
+            </ul>
+
+            <ul class="nav-ul">
+                <li class="nav-ul-li li-img"><img src="/src/icono.png" alt="Logo"></li>
+                <li class="hideOnMobile"><a href="index.html">Inicio</a></li>
+                <li class="hideOnMobile"><a href="reflexiones_articulos.html">Reflexiones</a></li>
+                <li class="hideOnMobile"><a href="imagenes.html">Imágenes</a></li>
+                <li class="hideOnMobile"><a href="#">Desarrollo de apps</a></li>
+                <li class="hideOnMobile"><a href="#">Música</a></li>
+                <li onclick="ShowSidebar()" class="img_svg"><img src="/src/menu.svg" alt="Menu"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Artículo -->
+    <br><br><br><br><br>
+    <section class="content">
+        <article class="poem">
+            <h1>Vivir o Morir</h1>
+
+        Te ví acurrucado en mi cama, desnudo, sin nignuna piel protegiendo tu alma, con tus colores expuestos, hundido y afisxiado en tu represión.
+Y me tomó por sorpresa verlo pero allí estaba él, tu niño interior una vez más.
+Con el peso de las heridas, los miedos y una realidad incierta sobre su pequeño cuerpo ¿Y cómo podría yo perdirle, que dejase de llorar?
+Si todo lo que ese pequeño tuvo alguna vez, se lo quitaron, se lo robaron, se lo rompieron.
+Si todo lo que quedó en sus manos ahora, solo es dolor crónico y la ruptura del silencio por las vibraciones de su llanto.
+El amor de mi vida se estaba ahogando dentro mi habitación, en plena madrugada, entre la oscuridad de todo lo que fué, de lo que no es, y de lo que nunca será.
+Sus hemorragias internas drenaban por sus ojos, y el temblor que sentía en la yemas de mis dedos al tocar sus hombros, era el peso de las olas al sacudir sus recuerdos.
+Me quité la ropa e inhalé todo el oxígeno que pude retener en mi pecho, me lanzé hacia el agua y comencé a nadar, nadar y nadar hasta lo profundo por ese temible océano, repleto de tus criaturas imaginarias, con la misión de encontrarte.
+Como tantas otras veces vos caminste ida y vuelta hacía el infierno a buscarme, con un vaso de agua y ojotas en los pies, dispuesto a luchar con cualquier demonio.
+Porque el amor no tendría ningún significado especial, si solo me quedara en la orilla del mar, disfrutando de la arena y el sol.
+
+        </article>
+    </section>
+
+    <script>
+        function ShowSidebar(){
+            document.querySelector('.sidebar').style.display = 'flex';
+        }
+        function HideSidebar(){
+            document.querySelector('.sidebar').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
