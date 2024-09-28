@@ -156,7 +156,7 @@ article ul{
     font-size: 1.6em;
 }
 .background-img{
-    background-image: url("src/wall-index.jpg");
+    background-image: url("/src/wall-index.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
