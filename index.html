@@ -11,39 +11,35 @@
 </head>
 
 <body>
-
     <!-- header -->
     <header>
-    <nav class="header-nav">
-    
-    <ul class="sidebar">
-        <li onclick=HideSidebar() class="img_svg" alt="imagen de cruz">
-            <img src="src/close.svg" alt="imagen de cruz">
-        </li>
-        <li class="">
-            <img src="src/icono.png" alt="icono de la pagina">
-        </li>
-        
-        
-        <li class=""><a class="nav-a" href="#">Inicio</a></li>
-        <li class=""><a class="nav-a" href="page/reflexiones_articulos.html">Reflexiones</a></li>
-        <li class=""><a class="nav-a" href="page/imagenes/imagenes.html">Imagenes</a></li>
-        <li class=""><a class="nav-a" href="#">Desarrollo de apps</a></li>
-        <li class=""><a class="nav-a" href="#">Musica</a></li>
-    </ul>
-    
-    <ul class="nav-ul">
-        <li class="nav-ul-li li-img"><img src="src/icono.png" alt="icono de la pagina"></li>
-        
-        <li class="hideOnMobile"><a class="" href="#">Inicio</a></li>
-        <li class="hideOnMobile"><a class="" href="page/reflexiones_articulos.html">Reflexiones</a></li>
-        <li class="hideOnMobile"><a class="" href="page/imagenes/imagenes.html">Imagenes</a></li>
-        <li class="hideOnMobile"><a class="" href="#">Desarrollo de apps</a></li>
-        <li class="hideOnMobile"><a class="" href="#">Musica</a></li>
-        <li onclick=ShowSidebar() class="img_svg"><img src="src/menu.svg" alt="imagen de hamburgesa"></li>
-    </ul>
-    </div>
-    </nav>
+        <nav class="header-nav">
+            <ul class="sidebar">
+                <li onclick=HideSidebar() class="img_svg" alt="imagen de cruz">
+                    <img src="src/close.svg" alt="imagen de cruz">
+                </li>
+                <li class="">
+                    <img src="src/icono.png" alt="icono de la pagina">
+                </li>
+                
+                
+                <li class=""><a class="nav-a" href="#">Inicio</a></li>
+                <li class=""><a class="nav-a" href="page/reflexiones_articulos.html">Reflexiones</a></li>
+                <li class=""><a class="nav-a" href="page/imagenes/imagenes.html">Imagenes</a></li>
+                <li class=""><a class="nav-a" href="#">Desarrollo de apps</a></li>
+                <li class=""><a class="nav-a" href="#">Musica</a></li>
+            </ul>
+            
+            <ul class="nav-ul">
+                <li class="nav-ul-li li-img"><img src="src/icono.png" alt="icono de la pagina"></li>
+                <li class="hideOnMobile"><a class="" href="#">Inicio</a></li>
+                <li class="hideOnMobile"><a class="" href="page/reflexiones_articulos.html">Reflexiones</a></li>
+                <li class="hideOnMobile"><a class="" href="page/imagenes/imagenes.html">Imagenes</a></li>
+                <li class="hideOnMobile"><a class="" href="#">Desarrollo de apps</a></li>
+                <li class="hideOnMobile"><a class="" href="#">Musica</a></li>
+                <li onclick=ShowSidebar() class="img_svg"><img src="src/menu.svg" alt="imagen de hamburgesa"></li>
+            </ul>
+        </nav>
     </header>
 
 <script>
@@ -56,54 +52,57 @@
     sidebar.style.display = 'none'
     }
 </script>
+
 <div class="container">
-<article>
-    <div class="background-img">
-        <img class="bg-img"  alt="">
-        <div class="cont_img"><img class="im"></div>
-    </div>
-    <h1>¿Qué es esta pagina?</h1>
-    <p class="wa" >Esta página tiene como fin, dejar un seguimiento de toda mi creatividad
-                    y proyectos hechos y por hacer. Tambien quiero dejar herramientas y notas para llevar
-                    cuentas, como calendarios, tablas, etc.
-                    Algunas de las cosas que te podés encontrar son:
-    </p>
-    
-    <ul>
-    
-    <li><p class="art_head_li">» Letras</p>
+    <article>
+        <div class="background-img">
+            <img class="bg-img"  alt="">
+            <div class="cont_img"><img class="im"></div>
+        </div>
+
+        <h1>¿Qué es esta pagina?</h1>
+        
+        <p class="wa" >Esta página tiene como fin, dejar un seguimiento de toda mi creatividad
+                        y proyectos hechos y por hacer. Tambien quiero dejar herramientas y notas para llevar
+                        cuentas, como calendarios, tablas, etc.
+                        Algunas de las cosas que te podés encontrar son:
+        </p>
+        
         <ul>
-            <li class="sli2">◇ Reflexiones</li>
-            <li class="sli2">◇ Letras de canciones</li>
-            <li class="sli2">◇ Críticas</li>
-            <li class="sli2">◇ Mis anhelos</li>
-        </ul>
+        
+        <li><p class="art_head_li">» Letras</p>
+            <ul>
+                <li class="sli2">◇ Reflexiones</li>
+                <li class="sli2">◇ Letras de canciones</li>
+                <li class="sli2">◇ Críticas</li>
+                <li class="sli2">◇ Mis anhelos</li>
+            </ul>
+            </li>
+        
+        <li><p class="art_head_li">» Imágenes</p>
+            <ul>
+                <li class="sli2">◇ Dibujos</li>
+                <li class="sli2">◇ Animaciones</li>
+                <li class="sli2">◇ videos</li>
+            </ul>
+            </li>
+        
+        <li><p class="art_head_li">» Desarrollo de apps</p>
+            <ul>
+                <li class="sli2">◇ Aplicaciones útiles</li>
+                <li class="sli2">◇ Juegos entretenidos</li>
+                <li class="sli2">◇ Experimentos con app</li>
+            </ul>
         </li>
-    
-    <li><p class="art_head_li">» Imágenes</p>
-        <ul>
-            <li class="sli2">◇ Dibujos</li>
-            <li class="sli2">◇ Animaciones</li>
-            <li class="sli2">◇ videos</li>
+        
+        <li> <p class="art_head_li">» Música</p>
+            <ul>
+                <li class="sli2">◇ Canciones propias</li>
+                <li class="sli2">◇ Canciones hechas con amigos</li>
+                <li class="sli2">◇ Canciones premiun</li>
+            </ul>
+            </li>
         </ul>
-        </li>
-    
-    <li><p class="art_head_li">» Desarrollo de apps</p>
-        <ul>
-            <li class="sli2">◇ Aplicaciones útiles</li>
-            <li class="sli2">◇ Juegos entretenidos</li>
-            <li class="sli2">◇ Experimentos con app</li>
-        </ul>
-    </li>
-    
-    <li> <p class="art_head_li">» Música</p>
-        <ul>
-            <li class="sli2">◇ Canciones propias</li>
-            <li class="sli2">◇ Canciones hechas con amigos</li>
-            <li class="sli2">◇ Canciones premiun</li>
-        </ul>
-        </li>
-    </ul>
     </article>
 </div>
 
