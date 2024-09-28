@@ -161,6 +161,13 @@ article ul{
     background-position: center;
     background-repeat: no-repeat;
 }
+.background-img .bg-img{
+    background-image: url("../src/imagenes/wall-index.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
 .im{
     background-image: url("../src/gato_punk.avif");
     background-size: 100% 100%;
@@ -171,7 +178,7 @@ article ul{
     justify-content: center;
     background-size: contain;
     transform: scale(1.2);
-    
+    z-index: 5;
 }
 
 .cont_img{
